@@ -41,6 +41,7 @@ d:\Website project\
 ├── logo.jpg              # Clinic Logo (JPEG fallback)
 ├── favicon.ico           # Browser Tab Favicon
 ├── instagram_ad_poster.png # High-Converting Instagram Ad Creative Graphic
+├── INSTAGRAM_ADS_GUIDE.md # Complete ₹500 Instagram Ad Strategy & Blueprint
 ├── robots.txt            # Search engine crawler instructions
 └── sitemap.xml           # SEO Sitemap for Google indexing
 ```
