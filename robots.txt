@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://princyhearandspeech.in/sitemap.xml

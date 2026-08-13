@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Easy Website Manager | Princy Hear &amp; Speech Rehab</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+
+<div class="admin-layout">
+  <!-- ================= SIDEBAR ================= -->
+  <aside class="admin-sidebar" id="admin-sidebar">
+    <div class="sidebar-header">
+      <div class="sidebar-logo">🩺</div>
+      <div class="sidebar-brand">
+        <h2>Princy Rehab</h2>
+        <span>Easy Website Manager</span>
+      </div>
+    </div>
+
+    <nav class="sidebar-nav">
+      <div class="nav-label">Overview &amp; Photos</div>
+      <a href="#" class="nav-item active" data-tab="dashboard">
+        <span class="icon">📊</span>
+        <span>Dashboard</span>
+      </a>
+      <a href="#" class="nav-item" data-tab="images">
+        <span class="icon">📸</span>
+        <span>Photos &amp; Logos</span>
+        <span class="nav-badge" id="sidebar-img-count">13</span>
+      </a>
+
+      <div class="nav-label">Doctors &amp; Services</div>
+      <a href="#" class="nav-item" data-tab="doctor">
+        <span class="icon">🩺</span>
+        <span>Lead Doctor Profile</span>
+      </a>
+      <a href="#" class="nav-item" data-tab="team">
+        <span class="icon">👥</span>
+        <span>Staff &amp; Specialists</span>
+      </a>
+      <a href="#" class="nav-item" data-tab="services">
+        <span class="icon">📋</span>
+        <span>Our 6 Services</span>
+      </a>
+
+      <div class="nav-label">Contact &amp; Story</div>
+      <a href="#" class="nav-item" data-tab="clinic">
+        <span class="icon">📞</span>
+        <span>Phone, WhatsApp &amp; Hours</span>
+      </a>
+      <a href="#" class="nav-item" data-tab="heroAbout">
+        <span class="icon">📝</span>
+        <span>Homepage Text &amp; Story</span>
+      </a>
+      <a href="#" class="nav-item" data-tab="testimonials">
+        <span class="icon">⭐</span>
+        <span>Patient Reviews</span>
+      </a>
+
+      <div class="nav-label">Backup &amp; Safety</div>
+      <a href="#" class="nav-item" data-tab="export">
+        <span class="icon">💾</span>
+        <span>Save Backup File</span>
+      </a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <a href="index.html" target="_blank" class="public-site-link">
+        <span>🌐 View Live Website</span>
+        <span>&rarr;</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- ================= MAIN CONTENT AREA ================= -->
+  <main class="admin-main">
+    <!-- Topbar -->
+    <header class="admin-topbar">
+      <div class="topbar-left">
+        <button class="mobile-toggle" id="mobile-menu-btn">☰</button>
+        <div class="page-title">
+          <h1 id="current-page-title">📊 Dashboard</h1>
+          <p id="current-page-desc">Easily update your clinic website with simple clicks — no technical knowledge required!</p>
+        </div>
+      </div>
+
+      <div class="topbar-actions">
+        <div class="live-status-pill">
+          <span class="status-dot"></span>
+          <span>Live Sync Active</span>
+        </div>
+        <a href="index.html" target="_blank" class="btn btn-outline">
+          <span>👁️ Preview Site</span>
+        </a>
+        <button class="btn btn-save-big" id="save-all-btn">
+          <span>💾 Save Changes</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Container Content -->
+    <div class="admin-content">
+
+      <!-- ================= TAB 1: DASHBOARD ================= -->
+      <section class="tab-section active" id="tab-dashboard">
+        <!-- Friendly welcome banner -->
+        <div class="friendly-banner">
+          <div class="friendly-banner-icon">👋</div>
+          <div class="friendly-banner-content">
+            <h4>Welcome to your Website Control Panel!</h4>
+            <p>
+              You can easily change photos, update phone numbers, edit doctor qualifications, add reviews, and modify services. Whenever you make any changes, click the green <strong>"💾 Save Changes"</strong> button at the top right, and your website will update instantly!
+            </p>
+          </div>
+        </div>
+
+        <h3 style="color:#fff; font-size:1.25rem; font-weight:800; margin-bottom:14px;">⚡ What would you like to update today?</h3>
+        
+        <!-- Step-by-step setup cards -->
+        <div class="quick-setup-grid">
+          <div class="setup-card" onclick="document.querySelector('.nav-item[data-tab=clinic]').click();">
+            <div class="setup-card-header">
+              <div class="setup-step-num">1</div>
+              <h4>Phone, WhatsApp &amp; Hours</h4>
+            </div>
+            <p>Update your clinic phone number, WhatsApp booking number, address, and daily opening hours.</p>
+            <div class="setup-card-btn">Open Contact Settings &rarr;</div>
+          </div>
+
+          <div class="setup-card" onclick="document.querySelector('.nav-item[data-tab=images]').click();">
+            <div class="setup-card-header">
+              <div class="setup-step-num">2</div>
+              <h4>Change Photos &amp; Logos</h4>
+            </div>
+            <p>Upload new photos from your computer or generate clean clinic graphics with 1 click.</p>
+            <div class="setup-card-btn">Manage Website Photos &rarr;</div>
+          </div>
+
+          <div class="setup-card" onclick="document.querySelector('.nav-item[data-tab=doctor]').click();">
+            <div class="setup-card-header">
+              <div class="setup-step-num">3</div>
+              <h4>Lead Doctor Profile</h4>
+            </div>
+            <p>Change doctor name, degrees (e.g. M.Sc. SLP), specialties, and 5-star rating badge.</p>
+            <div class="setup-card-btn">Edit Doctor Profile &rarr;</div>
+          </div>
+
+          <div class="setup-card" onclick="document.querySelector('.nav-item[data-tab=testimonials]').click();">
+            <div class="setup-card-header">
+              <div class="setup-step-num">4</div>
+              <h4>Patient Reviews</h4>
+            </div>
+            <p>Add new 5-star reviews and feedback from happy parents and patients.</p>
+            <div class="setup-card-btn">Manage Reviews &rarr;</div>
+          </div>
+        </div>
+
+        <!-- Quick safety reminder -->
+        <div class="admin-card-panel" style="background: rgba(15, 31, 71, 0.6); border-color: rgba(255,255,255,0.1);">
+          <h3 class="panel-title">🛡️ Safe &amp; Worry-Free Editing</h3>
+          <p style="color: var(--text-sub); font-size: 0.92rem; line-height: 1.6;">
+            • You can experiment safely! If you ever want to revert everything back to the original version, go to <strong>"Save Backup File"</strong> and click <em>"Reset All to Original Defaults"</em>.<br/>
+            • Want to test how it looks? Click the <strong>"👁️ Preview Site"</strong> button at the top to see your live website anytime.
+          </p>
+        </div>
+      </section>
+
+      <!-- ================= TAB 2: PHOTOS & LOGOS ================= -->
+      <section class="tab-section" id="tab-images">
+        <div class="section-header-box">
+          <div>
+            <h2>📸 Website Photos &amp; Placeholders</h2>
+            <p>Click <strong>"📁 Upload Photo"</strong> on any card to replace a photo from your computer, or <strong>"✨ Create Graphic"</strong> to make a branded placeholder!</p>
+          </div>
+          <div class="filter-pills">
+            <button class="pill-btn active" data-category="all">All Photos</button>
+            <button class="pill-btn" data-category="branding">Logos &amp; Icons</button>
+            <button class="pill-btn" data-category="specialist">Doctor Photo</button>
+            <button class="pill-btn" data-category="team">Staff Photos</button>
+            <button class="pill-btn" data-category="services">Service Pictures</button>
+            <button class="pill-btn" data-category="facility">Clinic Rooms</button>
+          </div>
+        </div>
+
+        <!-- Grid of Image Slots -->
+        <div class="images-grid" id="images-grid-container">
+          <!-- Dynamically populated by admin.js -->
+        </div>
+      </section>
+
+      <!-- ================= TAB 3: LEAD DOCTOR PROFILE ================= -->
+      <section class="tab-section" id="tab-doctor">
+        <div class="admin-card-panel">
+          <h3 class="panel-title">🩺 Lead Doctor Profile (Homepage Hero Section)</h3>
+          <p class="panel-subtitle">This information is highlighted in the prominent card on the homepage.</p>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label>Doctor Full Name</label>
+              <input type="text" id="doc-name" placeholder="e.g. Dr. Sornajali Srichandan" />
+              <span class="field-help-hint">💡 Shown as the main doctor name on the hero portrait card.</span>
+            </div>
+            <div class="form-group">
+              <label>Qualifications / Degrees</label>
+              <input type="text" id="doc-degree" placeholder="e.g. M.Sc. (SLP)" />
+              <span class="field-help-hint">💡 Medical degree or specialization letters.</span>
+            </div>
+          </div>
+
+          <div class="form-group" style="margin-top: 18px;">
+            <label>Designation &amp; Specialty Title</label>
+            <input type="text" id="doc-designation" placeholder="e.g. Audiologist & Speech and Language Pathologist" />
+            <span class="field-help-hint">💡 Clear description of what the specialist treats.</span>
+          </div>
+
+          <div class="form-grid-2" style="margin-top: 18px;">
+            <div class="form-group">
+              <label>Location Badge Tag</label>
+              <input type="text" id="doc-location-tag" placeholder="e.g. 🏥 Patia, Bhubaneswar" />
+              <span class="field-help-hint">💡 Small tag shown under the doctor's name.</span>
+            </div>
+            <div class="form-group">
+              <label>Rating Badge Tag</label>
+              <input type="text" id="doc-rating-tag" placeholder="e.g. ★ 5.0 Rated Specialist" />
+              <span class="field-help-hint">💡 Trust badge shown next to the location tag.</span>
+            </div>
+          </div>
+
+          <div style="margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--adm-border); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px;">
+            <div>
+              <h4 style="color:#fff; font-size: 1rem;">Doctor Portrait Photo</h4>
+              <p style="color: var(--text-sub); font-size: 0.85rem;">Click below to change or upload the doctor photo.</p>
+            </div>
+            <div style="display: flex; gap: 10px;">
+              <button class="btn btn-primary btn-sm" onclick="window.adminJumpToImage('doctorHero')">📸 Change Doctor Photo</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= TAB 4: STAFF & SPECIALISTS ================= -->
+      <section class="tab-section" id="tab-team">
+        <div class="section-header-box">
+          <div>
+            <h2>👥 Clinic Specialists &amp; Team Members</h2>
+            <p>These team members are displayed in the <strong>About Us</strong> page team section.</p>
+          </div>
+        </div>
+
+        <div id="team-members-container">
+          <!-- Dynamically populated by admin.js -->
+        </div>
+      </section>
+
+      <!-- ================= TAB 5: OUR 6 SERVICES ================= -->
+      <section class="tab-section" id="tab-services">
+        <div class="section-header-box">
+          <div>
+            <h2>📋 Our 6 Therapy Services</h2>
+            <p>Customize the service names, descriptions, and feature bullet points shown on the Services page.</p>
+          </div>
+        </div>
+
+        <div id="services-editor-container">
+          <!-- Dynamically populated by admin.js -->
+        </div>
+      </section>
+
+      <!-- ================= TAB 6: PHONE, WHATSAPP & HOURS ================= -->
+      <section class="tab-section" id="tab-clinic">
+        <div class="admin-card-panel">
+          <h3 class="panel-title">📞 Phone Numbers &amp; WhatsApp Booking</h3>
+          <p class="panel-subtitle">When patients click "Call Now" or "Book on WhatsApp" on your website, it connects to these numbers.</p>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label>Clinic Name</label>
+              <input type="text" id="gen-clinic-name" />
+              <span class="field-help-hint">💡 Main website title.</span>
+            </div>
+            <div class="form-group">
+              <label>Clinic Subtitle</label>
+              <input type="text" id="gen-clinic-subname" />
+              <span class="field-help-hint">💡 E.g. Rehab Clinic · Bhubaneswar.</span>
+            </div>
+          </div>
+
+          <div class="form-grid-3" style="margin-top: 18px;">
+            <div class="form-group">
+              <label>Phone Number (for Calls)</label>
+              <input type="text" id="gen-phone" placeholder="+91 82499 64216" />
+              <span class="field-help-hint">💡 Patients click this to call you directly.</span>
+            </div>
+            <div class="form-group">
+              <label>WhatsApp Number (Digits Only)</label>
+              <input type="text" id="gen-whatsapp" placeholder="918249964216" />
+              <span class="field-help-hint">💡 WhatsApp chat number without + or spaces.</span>
+            </div>
+            <div class="form-group">
+              <label>Clinic Email</label>
+              <input type="email" id="gen-email" placeholder="contact@princyhearandspeech.in" />
+              <span class="field-help-hint">💡 Email address for patient inquiries.</span>
+            </div>
+          </div>
+
+          <div class="form-group" style="margin-top: 18px;">
+            <label>Short Address (Header &amp; Footer)</label>
+            <input type="text" id="gen-address-short" />
+            <span class="field-help-hint">💡 E.g. Nandan Vihar, Patia, Bhubaneswar 751024</span>
+          </div>
+
+          <div class="form-group" style="margin-top: 18px;">
+            <label>Full Clinic Street Address</label>
+            <textarea id="gen-address-full"></textarea>
+            <span class="field-help-hint">💡 Complete building and landmark address shown on the Contact page.</span>
+          </div>
+        </div>
+
+        <div class="admin-card-panel">
+          <h3 class="panel-title">⏰ Clinic Working Hours</h3>
+          <p class="panel-subtitle">Display your opening and closing times clearly to your patients.</p>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label>Monday – Friday Hours</label>
+              <input type="text" id="gen-hours-weekday" placeholder="Mon – Fri: 9 AM – 8 PM" />
+            </div>
+            <div class="form-group">
+              <label>Weekend Hours</label>
+              <input type="text" id="gen-hours-weekend" placeholder="Saturday: 9 AM – 2 PM · Sunday: Closed" />
+            </div>
+          </div>
+
+          <div class="form-group" style="margin-top: 18px;">
+            <label>Google Maps Location Link (or Embed URL)</label>
+            <input type="text" id="gen-map-url" />
+            <span class="field-help-hint">💡 Interactive map link so patients can get directions on Google Maps.</span>
+          </div>
+
+          <div class="form-grid-2" style="margin-top: 18px;">
+            <div class="form-group">
+              <label>Instagram Page Link</label>
+              <input type="text" id="gen-instagram" />
+            </div>
+            <div class="form-group">
+              <label>Facebook Page Link</label>
+              <input type="text" id="gen-facebook" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= TAB 7: HOMEPAGE TEXT & STORY ================= -->
+      <section class="tab-section" id="tab-heroAbout">
+        <div class="admin-card-panel">
+          <h3 class="panel-title">✨ Homepage Top Banner Text</h3>
+          <p class="panel-subtitle">Edit the main headline and message visitors see first.</p>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label>Top Badge Text</label>
+              <input type="text" id="hero-badge" />
+              <span class="field-help-hint">💡 Small pill tag at top of homepage.</span>
+            </div>
+            <div class="form-group">
+              <label>Main Headline</label>
+              <input type="text" id="hero-title" />
+              <span class="field-help-hint">💡 Big bold headline.</span>
+            </div>
+          </div>
+
+          <div class="form-group" style="margin-top: 18px;">
+            <label>Highlighted Glowing Text</label>
+            <input type="text" id="hero-title-typed" />
+            <span class="field-help-hint">💡 Colored animated text right after the main headline.</span>
+          </div>
+
+          <div class="form-group" style="margin-top: 18px;">
+            <label>Short Description Paragraph</label>
+            <textarea id="hero-desc"></textarea>
+          </div>
+
+          <div class="form-grid-4" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 14px; margin-top: 18px;">
+            <div class="form-group">
+              <label>Rating Stat</label>
+              <input type="text" id="stat-rating" />
+            </div>
+            <div class="form-group">
+              <label>Patients Served</label>
+              <input type="text" id="stat-patients" />
+            </div>
+            <div class="form-group">
+              <label>Services Count</label>
+              <input type="text" id="stat-services" />
+            </div>
+            <div class="form-group">
+              <label>Days Open</label>
+              <input type="text" id="stat-days" />
+            </div>
+          </div>
+        </div>
+
+        <div class="admin-card-panel">
+          <h3 class="panel-title">📖 About Us: Mission &amp; Story</h3>
+          <p class="panel-subtitle">Explain your clinic's history and dedication to Bhubaneswar families.</p>
+
+          <div class="form-group">
+            <label>Our Mission Statement</label>
+            <textarea id="about-mission"></textarea>
+          </div>
+
+          <div class="form-group" style="margin-top: 18px;">
+            <label>Our Vision Statement</label>
+            <textarea id="about-vision"></textarea>
+          </div>
+
+          <div class="form-group" style="margin-top: 18px;">
+            <label>Clinic Background &amp; Story</label>
+            <textarea id="about-history"></textarea>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= TAB 8: PATIENT REVIEWS ================= -->
+      <section class="tab-section" id="tab-testimonials">
+        <div class="section-header-box">
+          <div>
+            <h2>⭐ Patient Reviews &amp; Testimonials</h2>
+            <p>Add real patient feedback to build trust with new visitors.</p>
+          </div>
+          <button class="btn btn-primary" id="add-review-btn">➕ Add New Review</button>
+        </div>
+
+        <div id="testimonials-editor-container">
+          <!-- Dynamically populated by admin.js -->
+        </div>
+      </section>
+
+      <!-- ================= TAB 9: BACKUP & EXPORT ================= -->
+      <section class="tab-section" id="tab-export">
+        <div class="admin-card-panel">
+          <h3 class="panel-title">💾 Download a Backup Copy</h3>
+          <p class="panel-subtitle">Keep a safe backup file of all your website texts, phone numbers, and photos on your computer.</p>
+
+          <div style="display: flex; gap: 14px; flex-wrap: wrap; margin-top: 16px;">
+            <button class="btn btn-primary" id="export-json-btn">📥 Download Backup File (.json)</button>
+            <button class="btn btn-outline" id="import-json-btn">📤 Restore from Backup File</button>
+            <input type="file" id="import-file-input" accept=".json" style="display: none;" />
+            <button class="btn btn-outline" style="color: var(--danger); border-color: rgba(239,68,68,0.4);" id="reset-defaults-btn">🔄 Reset All to Original Defaults</button>
+          </div>
+        </div>
+
+        <div class="admin-card-panel">
+          <h3 class="panel-title">🚀 Ready to Update GitHub?</h3>
+          <p class="panel-subtitle">Your website files are fully organized in this workspace folder. You can push them to GitHub anytime at <strong>https://github.com/amarvisual/Princy-hear-speech</strong>.</p>
+        </div>
+      </section>
+
+    </div>
+  </main>
+</div>
+
+<!-- ================= SVG PLACEHOLDER GENERATOR MODAL ================= -->
+<div class="modal-backdrop" id="placeholder-modal">
+  <div class="modal-dialog">
+    <div class="modal-header">
+      <h3>✨ Create a Clinic Graphic Placeholder</h3>
+      <button class="modal-close" id="close-modal-btn">&times;</button>
+    </div>
+
+    <div class="modal-body">
+      <!-- Live Preview -->
+      <div class="modal-preview-box">
+        <img id="modal-live-svg-preview" src="" alt="Placeholder Preview" />
+      </div>
+
+      <div class="form-grid-2">
+        <div class="form-group">
+          <label>Graphic Title Text</label>
+          <input type="text" id="ph-text" value="Princy Speech Clinic" />
+          <span class="field-help-hint">💡 Main label on the image.</span>
+        </div>
+        <div class="form-group">
+          <label>Subtitle / Note</label>
+          <input type="text" id="ph-subtext" value="Bhubaneswar" />
+        </div>
+      </div>
+
+      <div class="form-grid-2">
+        <div class="form-group">
+          <label>Choose Clinic Icon</label>
+          <select id="ph-icon">
+            <option value="🩺">🩺 Stethoscope / Doctor</option>
+            <option value="🗣️">🗣️ Speech Therapy</option>
+            <option value="👂">👂 Hearing Assessment</option>
+            <option value="👶">👶 Child Therapy</option>
+            <option value="🧠">🧠 Adult Rehab</option>
+            <option value="🔊">🔊 Digital Hearing Aids</option>
+            <option value="🏡">🏡 Home Therapy</option>
+            <option value="🏥">🏥 Clinic Building</option>
+            <option value="👤">👤 Specialist Avatar</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Color Theme</label>
+          <select id="ph-color-preset">
+            <option value="navy">🌊 Royal Navy &amp; Blue (Recommended)</option>
+            <option value="rose">🌸 Rose Coral (Warm Accent)</option>
+            <option value="sky">❄️ Soft Sky Blue</option>
+            <option value="teal">🌿 Medical Teal &amp; Emerald</option>
+            <option value="dark">🌑 Slate Gray &amp; Dark</option>
+          </select>
+        </div>
+      </div>
+
+      <input type="hidden" id="ph-width" value="600" />
+      <input type="hidden" id="ph-height" value="400" />
+    </div>
+
+    <div class="modal-footer">
+      <button class="btn btn-outline" id="cancel-modal-btn">Cancel</button>
+      <button class="btn btn-primary" id="apply-placeholder-btn">Apply Graphic to Website</button>
+    </div>
+  </div>
+</div>
+
+<!-- Hidden file input for uploads -->
+<input type="file" id="hidden-file-input" accept="image/*" style="display: none;" />
+
+<!-- Scripts -->
+<script src="site-data.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>
