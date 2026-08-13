@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#061A3A" />
+      <stop offset="50%" stop-color="#0D295E" />
+      <stop offset="100%" stop-color="#05152F" />
+    </linearGradient>
+    <linearGradient id="multiCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14346E" />
+      <stop offset="100%" stop-color="#0A1E45" />
+    </linearGradient>
+    <linearGradient id="tealBadge" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06B6D4" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+    <linearGradient id="ctaGrad3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <filter id="shadow3" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000000" flood-opacity="0.45" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="1080" fill="url(#bgGrad3)" />
+
+  <!-- Geometric elements -->
+  <circle cx="950" cy="150" r="220" fill="#06B6D4" opacity="0.12" />
+  <circle cx="120" cy="900" r="240" fill="#10B981" opacity="0.08" />
+
+  <!-- Top Header Bar -->
+  <rect x="50" y="50" width="980" height="90" rx="20" fill="#0A1E45" stroke="#06B6D4" stroke-width="2" />
+  <text x="90" y="108" font-family="'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="900" fill="#FFFFFF">🏥 Princy Hear &amp; Speech Rehab</text>
+  <rect x="760" y="70" width="240" height="50" rx="25" fill="url(#tealBadge)" />
+  <text x="880" y="103" font-family="'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle">BHUBANESWAR</text>
+
+  <!-- Main Headline Card -->
+  <g filter="url(#shadow3)">
+    <rect x="50" y="170" width="980" height="230" rx="24" fill="url(#multiCard)" stroke="rgba(6,182,212,0.3)" stroke-width="2" />
+    
+    <rect x="90" y="205" width="360" height="38" rx="8" fill="#F4879E" />
+    <text x="270" y="231" font-family="'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="900" fill="#071938" text-anchor="middle">⭐ TOP RATED REHAB CLINIC</text>
+    
+    <text x="90" y="295" font-family="'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="900" fill="#FFFFFF">Specialized Speech Therapy &amp;</text>
+    <text x="90" y="355" font-family="'Segoe UI', Roboto, sans-serif" font-size="46" font-weight="900" fill="#67E8F9">Advanced Hearing Solutions 🩺</text>
+  </g>
+
+  <!-- 4 Services Quick Grid -->
+  <g filter="url(#shadow3)">
+    <!-- Service 1: Speech Therapy -->
+    <rect x="50" y="430" width="475" height="195" rx="20" fill="#0A1E45" stroke="#2B89C8" stroke-width="1.5" />
+    <text x="90" y="480" font-family="'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="900" fill="#FFFFFF">🗣️ Child &amp; Adult Speech</text>
+    <text x="90" y="520" font-family="'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="600" fill="#CBD5E1">Stammering, delay, clarity, autism</text>
+    <text x="90" y="555" font-family="'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="600" fill="#CBD5E1">and voice rehabilitation programs.</text>
+    <text x="90" y="595" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="800" fill="#38BDF8">Expert 1-on-1 Sessions &rarr;</text>
+
+    <!-- Service 2: Hearing Aids -->
+    <rect x="555" y="430" width="475" height="195" rx="20" fill="#0A1E45" stroke="#2B89C8" stroke-width="1.5" />
+    <text x="595" y="480" font-family="'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="900" fill="#FFFFFF">🦻 Digital Hearing Aids</text>
+    <text x="595" y="520" font-family="'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="600" fill="#CBD5E1">100% Invisible, rechargeable &amp;</text>
+    <text x="595" y="555" font-family="'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="600" fill="#CBD5E1">Bluetooth enabled digital aids.</text>
+    <text x="595" y="595" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="800" fill="#38BDF8">Free Trial Available &rarr;</text>
+
+    <!-- Service 3: Audiology Tests -->
+    <rect x="50" y="650" width="475" height="195" rx="20" fill="#0A1E45" stroke="#2B89C8" stroke-width="1.5" />
+    <text x="90" y="700" font-family="'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="900" fill="#FFFFFF">🎧 Hearing Assessments</text>
+    <text x="90" y="740" font-family="'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="600" fill="#CBD5E1">Pure Tone Audiometry (PTA), BERA,</text>
+    <text x="90" y="775" font-family="'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="600" fill="#CBD5E1">OAE and Tympanometry testing.</text>
+    <text x="90" y="815" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="800" fill="#38BDF8">Accurate Soundproof Lab &rarr;</text>
+
+    <!-- Service 4: Doctor Info -->
+    <rect x="555" y="650" width="475" height="195" rx="20" fill="#0A1E45" stroke="#2B89C8" stroke-width="1.5" />
+    <text x="595" y="700" font-family="'Segoe UI', Roboto, sans-serif" font-size="24" font-weight="900" fill="#FFFFFF">👩‍⚕️ Dr. Sornajali Srichandan</text>
+    <text x="595" y="740" font-family="'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="600" fill="#CBD5E1">M.Sc. (SLP) · Lead Specialist</text>
+    <text x="595" y="775" font-family="'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="600" fill="#CBD5E1">📍 Patia, Bhubaneswar (Near KIIT)</text>
+    <text x="595" y="815" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="800" fill="#FBBF24">★ 5.0 Rated by 500+ Patients</text>
+  </g>
+
+  <!-- Big WhatsApp CTA Banner -->
+  <g filter="url(#shadow3)">
+    <rect x="50" y="880" width="980" height="150" rx="28" fill="url(#ctaGrad3)" stroke="#34D399" stroke-width="3" />
+    
+    <circle cx="130" cy="955" r="45" fill="#FFFFFF" />
+    <text x="130" y="972" font-family="'Segoe UI', Roboto, sans-serif" font-size="44" text-anchor="middle">💬</text>
+    
+    <text x="200" y="938" font-family="'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="900" fill="#064E3B">BOOK YOUR CONSULTATION ON WHATSAPP</text>
+    <text x="200" y="988" font-family="'Segoe UI', Roboto, sans-serif" font-size="42" font-weight="900" fill="#FFFFFF">📲 WhatsApp / Call: +91 82499 64216</text>
+  </g>
+</svg>

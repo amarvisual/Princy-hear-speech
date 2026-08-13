@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080" width="1080" height="1080">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#071938" />
+      <stop offset="50%" stop-color="#0E2F68" />
+      <stop offset="100%" stop-color="#061633" />
+    </linearGradient>
+    <linearGradient id="goldCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A3B78" />
+      <stop offset="100%" stop-color="#0C224E" />
+    </linearGradient>
+    <linearGradient id="goldBadge" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+    <linearGradient id="ctaGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <filter id="shadow2" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000000" flood-opacity="0.45" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="1080" fill="url(#bgGrad2)" />
+
+  <!-- Geometric Accents -->
+  <circle cx="100" cy="100" r="180" fill="#2B89C8" opacity="0.12" />
+  <circle cx="1000" cy="900" r="260" fill="#F59E0B" opacity="0.08" />
+
+  <!-- Top Header Bar -->
+  <rect x="50" y="50" width="980" height="90" rx="20" fill="#0C224E" stroke="#2B89C8" stroke-width="2" />
+  <text x="90" y="108" font-family="'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="900" fill="#FFFFFF">👂 Princy Hear &amp; Speech Rehab</text>
+  <rect x="760" y="70" width="240" height="50" rx="25" fill="url(#goldBadge)" />
+  <text x="880" y="103" font-family="'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800" fill="#071938" text-anchor="middle">★ 100% FREE TRIAL</text>
+
+  <!-- Main Headline Card -->
+  <g filter="url(#shadow2)">
+    <rect x="50" y="170" width="980" height="230" rx="24" fill="url(#goldCard)" stroke="rgba(245,158,11,0.3)" stroke-width="2" />
+    
+    <rect x="90" y="205" width="340" height="38" rx="8" fill="#10B981" />
+    <text x="260" y="231" font-family="'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="900" fill="#FFFFFF" text-anchor="middle">🔊 DIGITAL HEARING SOLUTIONS</text>
+    
+    <text x="90" y="295" font-family="'Segoe UI', Roboto, sans-serif" font-size="44" font-weight="900" fill="#FFFFFF">Difficulty Hearing Conversations?</text>
+    <text x="90" y="355" font-family="'Segoe UI', Roboto, sans-serif" font-size="46" font-weight="900" fill="#FDE68A">Free Hearing Test &amp; Aid Trial 🦻</text>
+  </g>
+
+  <!-- Content 2-Column Grid -->
+  <!-- Left Column: Key Features -->
+  <g filter="url(#shadow2)">
+    <rect x="50" y="430" width="475" height="420" rx="24" fill="#0C224E" stroke="#2B89C8" stroke-width="2" />
+    <text x="90" y="485" font-family="'Segoe UI', Roboto, sans-serif" font-size="26" font-weight="900" fill="#FFFFFF">🦻 Latest Technology Aids:</text>
+    
+    <text x="90" y="545" font-family="'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="700" fill="#FEF08A">⚡ 100% Invisible In-Ear Aids (CIC/IIC)</text>
+    <text x="90" y="605" font-family="'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="700" fill="#FEF08A">⚡ Rechargeable &amp; Bluetooth Streaming</text>
+    <text x="90" y="665" font-family="'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="700" fill="#FEF08A">⚡ Computerized Audiometry &amp; Tympanometry</text>
+    <text x="90" y="725" font-family="'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="700" fill="#FEF08A">⚡ Lifetime Free Fine-Tuning &amp; Cleaning</text>
+    
+    <rect x="85" y="760" width="405" height="60" rx="14" fill="rgba(245,158,11,0.15)" stroke="#F59E0B" stroke-width="1.5" />
+    <text x="287" y="798" font-family="'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800" fill="#FBBF24" text-anchor="middle">🎁 Free Hearing Consultation</text>
+  </g>
+
+  <!-- Right Column: Doctor & Clinic Location -->
+  <g filter="url(#shadow2)">
+    <rect x="555" y="430" width="475" height="420" rx="24" fill="#0C224E" stroke="#2B89C8" stroke-width="2" />
+    
+    <circle cx="792" cy="535" r="65" fill="#1B6EA8" stroke="#FDE68A" stroke-width="4" />
+    <text x="792" y="555" font-family="'Segoe UI', Roboto, sans-serif" font-size="52" text-anchor="middle">🩺</text>
+    
+    <text x="792" y="635" font-family="'Segoe UI', Roboto, sans-serif" font-size="25" font-weight="900" fill="#FFFFFF" text-anchor="middle">Dr. Sornajali Srichandan</text>
+    <text x="792" y="670" font-family="'Segoe UI', Roboto, sans-serif" font-size="19" font-weight="700" fill="#93C5FD" text-anchor="middle">Chief Audiologist · M.Sc. (SLP)</text>
+    <text x="792" y="705" font-family="'Segoe UI', Roboto, sans-serif" font-size="17" font-weight="600" fill="#CBD5E1" text-anchor="middle">Certified Hearing Aid Fitting Specialist</text>
+    
+    <rect x="590" y="740" width="405" height="80" rx="14" fill="#071938" stroke="rgba(255,255,255,0.1)" />
+    <text x="792" y="772" font-family="'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="800" fill="#FBBF24" text-anchor="middle">📍 Patia, Bhubaneswar (Near KIIT)</text>
+    <text x="792" y="802" font-family="'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="600" fill="#E2E8F0" text-anchor="middle">Appointments available Mon – Sat</text>
+  </g>
+
+  <!-- Big WhatsApp CTA Banner -->
+  <g filter="url(#shadow2)">
+    <rect x="50" y="880" width="980" height="150" rx="28" fill="url(#ctaGrad2)" stroke="#34D399" stroke-width="3" />
+    
+    <circle cx="130" cy="955" r="45" fill="#FFFFFF" />
+    <text x="130" y="972" font-family="'Segoe UI', Roboto, sans-serif" font-size="44" text-anchor="middle">📞</text>
+    
+    <text x="200" y="938" font-family="'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="900" fill="#064E3B">BOOK YOUR FREE HEARING TRIAL NOW</text>
+    <text x="200" y="988" font-family="'Segoe UI', Roboto, sans-serif" font-size="42" font-weight="900" fill="#FFFFFF">📲 WhatsApp: +91 82499 64216</text>
+  </g>
+</svg>

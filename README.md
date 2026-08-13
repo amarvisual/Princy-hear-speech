@@ -40,7 +40,11 @@ d:\Website project\
 ├── logo.png              # Clinic Logo (Primary transparent PNG)
 ├── logo.jpg              # Clinic Logo (JPEG fallback)
 ├── favicon.ico           # Browser Tab Favicon
-├── instagram_ad_poster.png # High-Converting Instagram Ad Creative Graphic
+├── ad_option1_speech_delay.svg # Ad Design 1: Child Speech Delay (with WhatsApp CTA)
+├── ad_option2_hearing_aids.svg # Ad Design 2: Digital Hearing Aids (with WhatsApp CTA)
+├── ad_option3_clinic_multispecialty.svg # Ad Design 3: Multi-Specialty Clinic Overview (with WhatsApp CTA)
+├── instagram_ad_poster.png # Ad Design 4: Photorealistic Clinical Photo Creative
+├── ad_posters_preview.html # Interactive Ad Creative Gallery (View, Compare & Download)
 ├── INSTAGRAM_ADS_GUIDE.md # Complete ₹500 Instagram Ad Strategy & Blueprint
 ├── robots.txt            # Search engine crawler instructions
 └── sitemap.xml           # SEO Sitemap for Google indexing
@@ -141,6 +145,9 @@ Then visit:
 ---
 
 ## 📝 Changelog & History
+
+### Version 1.3.0 (2026-08-13)
+- **Multi-Option Ad Creatives & Gallery**: Designed 3 vector ad posters (`ad_option1_speech_delay.svg`, `ad_option2_hearing_aids.svg`, `ad_option3_clinic_multispecialty.svg`) featuring prominent WhatsApp CTA (`+91 82499 64216`), and created an interactive ad gallery page [`ad_posters_preview.html`](file:///d:/Website%20project/ad_posters_preview.html).
 
 ### Version 1.2.0 (2026-08-13)
 - **Marketing & Growth Asset**: Created high-converting Instagram ad poster [`instagram_ad_poster.png`](file:///d:/Website%20project/instagram_ad_poster.png) and developed complete local targeting algorithm & ad copy for ₹500 budget.

@@ -5,7 +5,33 @@
 > **Location**: Nandan Vihar, Patia, Bhubaneswar, Odisha 751024  
 > **Phone / WhatsApp**: +91 82499 64216  
 > **Website**: [https://princy-hear-speech.vercel.app/](https://princy-hear-speech.vercel.app/)  
-> **Ad Creative File**: [`instagram_ad_poster.png`](file:///d:/Website%20project/instagram_ad_poster.png)  
+> **Interactive Ad Gallery**: [`ad_posters_preview.html`](file:///d:/Website%20project/ad_posters_preview.html)  
+
+---
+
+## 🖼️ Available Ad Creative Options (Choose One to Run)
+
+Open [`ad_posters_preview.html`](file:///d:/Website%20project/ad_posters_preview.html) in your browser to view all 4 options side by side:
+
+1. **Option 1: Child Speech Delay & Stammering ([`ad_option1_speech_delay.svg`](file:///d:/Website%20project/ad_option1_speech_delay.svg))**  
+   - *Best For*: Parents of 2–6 year old toddlers.  
+   - *Hook*: "Is Your Child 2+ Years Old & Not Speaking Clearly? 🗣️"  
+   - *WhatsApp Number*: `+91 82499 64216`  
+
+2. **Option 2: Digital Hearing Aids & Free Trial ([`ad_option2_hearing_aids.svg`](file:///d:/Website%20project/ad_option2_hearing_aids.svg))**  
+   - *Best For*: Adults, seniors, and children of aging parents.  
+   - *Hook*: "Difficulty Hearing Conversations? Free Hearing Test & Aid Trial 🦻"  
+   - *WhatsApp Number*: `+91 82499 64216`  
+
+3. **Option 3: Multi-Specialty Clinic Overview ([`ad_option3_clinic_multispecialty.svg`](file:///d:/Website%20project/ad_option3_clinic_multispecialty.svg))**  
+   - *Best For*: General brand awareness & patient trust.  
+   - *Hook*: "Specialized Speech Therapy & Advanced Hearing Solutions 🩺"  
+   - *WhatsApp Number*: `+91 82499 64216`  
+
+4. **Option 4: Photorealistic Clinical Photo ([`instagram_ad_poster.png`](file:///d:/Website%20project/instagram_ad_poster.png))**  
+   - *Best For*: Emotional connection showing doctor-child interaction.  
+   - *Hook*: "Is Your Child 2+ Years and Not Speaking Clearly?"  
+   - *WhatsApp Number*: `+91 82499 64216`  
 
 ---
 
