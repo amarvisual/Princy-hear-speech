@@ -4,6 +4,75 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+  // ---------------- Password Protection ----------------
+  const ADMIN_PASSCODE = "Ashish@2026";
+  const authOverlay = document.getElementById('admin-auth-overlay');
+  const authCard = document.getElementById('auth-card');
+  const passInput = document.getElementById('admin-pass-input');
+  const authEyeBtn = document.getElementById('auth-eye-btn');
+  const authErrorMsg = document.getElementById('auth-error-msg');
+  const authSubmitBtn = document.getElementById('auth-submit-btn');
+  const logoutBtn = document.getElementById('admin-logout-btn');
+
+  function checkAuthStatus() {
+    const isAuthed = sessionStorage.getItem('princy_admin_auth') === 'true';
+    if (isAuthed && authOverlay) {
+      authOverlay.classList.add('unlocked');
+    } else if (authOverlay) {
+      authOverlay.classList.remove('unlocked');
+      if (passInput) setTimeout(() => passInput.focus(), 200);
+    }
+  }
+
+  function handleLogin() {
+    if (!passInput) return;
+    const entered = passInput.value.trim();
+    if (entered === ADMIN_PASSCODE) {
+      sessionStorage.setItem('princy_admin_auth', 'true');
+      authOverlay.classList.add('unlocked');
+      authErrorMsg.classList.remove('show');
+      passInput.value = '';
+      showToast('🎉 Welcome, Admin! Website Manager unlocked.', 'success');
+    } else {
+      authErrorMsg.classList.add('show');
+      authCard.classList.add('shake');
+      setTimeout(() => authCard.classList.remove('shake'), 500);
+      passInput.select();
+    }
+  }
+
+  if (authSubmitBtn) {
+    authSubmitBtn.addEventListener('click', handleLogin);
+  }
+
+  if (passInput) {
+    passInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') handleLogin();
+    });
+  }
+
+  if (authEyeBtn && passInput) {
+    authEyeBtn.addEventListener('click', () => {
+      const isPass = passInput.type === 'password';
+      passInput.type = isPass ? 'text' : 'password';
+      authEyeBtn.textContent = isPass ? '🙈' : '👁️';
+    });
+  }
+
+  if (logoutBtn) {
+    logoutBtn.addEventListener('click', () => {
+      sessionStorage.removeItem('princy_admin_auth');
+      authOverlay.classList.remove('unlocked');
+      if (passInput) {
+        passInput.value = '';
+        passInput.focus();
+      }
+      showToast('🔒 Logged out successfully.', 'success');
+    });
+  }
+
+  checkAuthStatus();
+
   // 1. Initialize State
   let siteData = window.getPrincySiteData();
   let currentActiveImageSlot = null;

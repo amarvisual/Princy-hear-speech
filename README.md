@@ -75,6 +75,7 @@ Every public page (`index.html`, `about.html`, `services.html`, `contact.html`) 
 3. `data-ph-link="type"` elements automatically construct active `tel:`, `mailto:`, and `https://wa.me/` WhatsApp chat links.
 
 ### 3. Non-Technical Admin Dashboard (`admin.html`)
+- **🔒 Password Protection**: Protected with passcode authentication (`Ashish@2026`), session management, and a one-click Log Out button.
 - **No Coding Needed**: Designed with large buttons, plain English explanations, and helpful hints under every field.
 - **1-Click Photo Upload**: Click `📁 Upload Photo from Computer` on any photo card to pick an image from your device.
 - **Graphic Generator**: Click `✨ Create Graphic` to generate a branded SVG placeholder with custom clinic icons (🩺, 🗣️, 👂, 👶, 🧠, 🔊, 🏡).
@@ -128,6 +129,10 @@ Then visit:
 ---
 
 ## 📝 Changelog & History
+
+### Version 1.1.0 (2026-08-13)
+- **Security & Access Control**: Added password protection lock screen to [`admin.html`](file:///d:/Website%20project/admin.html) requiring passcode (`Ashish@2026`), with show/hide password toggle, error shake animation, session storage authentication, and a sidebar Log Out button.
+- **Deployment**: Live synchronization configured for Vercel at `https://princy-hear-speech.vercel.app/admin.html`.
 
 ### Version 1.0.0 (2026-08-13)
 - **Repository Setup**: Retrieved and organized project files from GitHub repository `amarvisual/Princy-hear-speech`.

@@ -12,6 +12,28 @@
 </head>
 <body>
 
+<!-- ================= LOGIN LOCK SCREEN ================= -->
+<div class="admin-auth-overlay" id="admin-auth-overlay">
+  <div class="auth-card" id="auth-card">
+    <div class="auth-logo">🔒</div>
+    <h2>Admin Login</h2>
+    <p>Please enter your passcode to access the website manager.</p>
+    
+    <div class="auth-form-group">
+      <label for="admin-pass-input">Passcode</label>
+      <div class="auth-input-wrap">
+        <input type="password" id="admin-pass-input" placeholder="Enter password..." autocomplete="current-password" autofocus />
+        <button type="button" class="auth-eye-btn" id="auth-eye-btn" title="Show/Hide Password">👁️</button>
+      </div>
+      <div class="auth-error-msg" id="auth-error-msg">❌ Incorrect passcode. Please try again.</div>
+    </div>
+
+    <button type="button" class="btn btn-primary auth-submit-btn" id="auth-submit-btn">
+      <span>🔓 Unlock Website Manager</span>
+    </button>
+  </div>
+</div>
+
 <div class="admin-layout">
   <!-- ================= SIDEBAR ================= -->
   <aside class="admin-sidebar" id="admin-sidebar">
@@ -75,6 +97,9 @@
         <span>🌐 View Live Website</span>
         <span>&rarr;</span>
       </a>
+      <button type="button" class="logout-btn-sidebar" id="admin-logout-btn">
+        <span>🔒 Log Out</span>
+      </button>
     </div>
   </aside>
 
