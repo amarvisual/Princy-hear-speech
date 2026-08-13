@@ -40,6 +40,7 @@ d:\Website project\
 ├── logo.png              # Clinic Logo (Primary transparent PNG)
 ├── logo.jpg              # Clinic Logo (JPEG fallback)
 ├── favicon.ico           # Browser Tab Favicon
+├── instagram_ad_poster.png # High-Converting Instagram Ad Creative Graphic
 ├── robots.txt            # Search engine crawler instructions
 └── sitemap.xml           # SEO Sitemap for Google indexing
 ```
@@ -121,6 +122,16 @@ Then visit:
 
 ---
 
+## 📢 Local Instagram Ad Campaign Blueprint (₹500 Budget)
+
+- **Target Location**: Bhubaneswar (Patia, Chandrasekharpur, KIIT Road, Jaydev Vihar, Nayapalli + 10 km radius).
+- **Target Audience**: Parents (Men & Women, Age 24–42) interested in Parenting, Toddler Development, Speech Therapy & Child Care.
+- **Campaign Objective**: WhatsApp Messages / Direct Inquiries (`https://wa.me/918249964216`).
+- **Ad Creative Graphic**: [`instagram_ad_poster.png`](file:///d:/Website%20project/instagram_ad_poster.png).
+- **Daily Budget**: ₹166/day for 3 days (Total ₹500).
+
+---
+
 ## 🔒 Mandatory Project Maintenance Rule
 
 > **CRITICAL RULE FOR AI ASSISTANTS & DEVELOPERS:**  
@@ -129,6 +140,9 @@ Then visit:
 ---
 
 ## 📝 Changelog & History
+
+### Version 1.2.0 (2026-08-13)
+- **Marketing & Growth Asset**: Created high-converting Instagram ad poster [`instagram_ad_poster.png`](file:///d:/Website%20project/instagram_ad_poster.png) and developed complete local targeting algorithm & ad copy for ₹500 budget.
 
 ### Version 1.1.0 (2026-08-13)
 - **Security & Access Control**: Added password protection lock screen to [`admin.html`](file:///d:/Website%20project/admin.html) requiring passcode (`Ashish@2026`), with show/hide password toggle, error shake animation, session storage authentication, and a sidebar Log Out button.
