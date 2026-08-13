@@ -1,5 +1,7 @@
 # Princy Hear & Speech Rehab — Official Project Documentation
 
+> **Live Website (Vercel)**: [https://princy-hear-speech.vercel.app/](https://princy-hear-speech.vercel.app/)  
+> **Live Admin Panel (Vercel)**: [https://princy-hear-speech.vercel.app/admin.html](https://princy-hear-speech.vercel.app/admin.html)  
 > **Repository**: [https://github.com/amarvisual/Princy-hear-speech](https://github.com/amarvisual/Princy-hear-speech)  
 > **Clinic**: Princy Hear and Speech Rehab  
 > **Location**: Nandan Vihar, Patia, Bhubaneswar, Odisha 751024  
